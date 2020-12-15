@@ -17,7 +17,7 @@ variable "deployment_endpoint" {
 }
 
 variable "google_domain_name" {
-  default = "indianagulu.com"
+  default = "tapjangul.com"
 }
 
 output "application_endpoint" {
