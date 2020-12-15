@@ -1,5 +1,5 @@
 variable "deployment_image" {
-  default = "docker.indianagulu.com/hello-world-app-dev-feature:b00f3ed"
+  default = "docker.tapjangul.com/hello-world-app-dev-feature:b00f3ed"
 }
 variable "deployment_environment" {
     default = "dev"
