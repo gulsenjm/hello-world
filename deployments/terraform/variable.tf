@@ -5,10 +5,13 @@ variable "deployment_environment" {
     default = "dev"
 }
 
+variable "deployment_name" {
+    default = "hello-world"
+}
+
 variable "deployment_endpoint" {
   type = "map"
   default = {
-    test  = "test.hello"
     dev  = "dev.hello"
     qa   = "qa.hello"
     prod = "hello"
@@ -23,3 +26,5 @@ variable "google_domain_name" {
 output "application_endpoint" {
   value = "${lookup(var.deployment_endpoint, "${var.deployment_environment}")}.${var.google_domain_name}"
 }
+
+
