@@ -1,14 +1,13 @@
 variable "deployment_image" {
-  default = "docker.tapjangul.com/hello-world-app-dev-feature:b00f3ed"
+  default = "docker.tapjangul.com/hello-world-app:latest"
 }
 variable "deployment_environment" {
-    default = "dev"
+    default = "stage"
 }
 
 variable "deployment_endpoint" {
   type = "map"
   default = {
-    test  = "test.hello"
     dev  = "dev.hello"
     qa   = "qa.hello"
     prod = "hello"
